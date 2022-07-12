@@ -6,9 +6,8 @@
   "scripts": {
     "start": "sucrase-node src/main/server.ts",
     "test": "jest --passWithNoTests --runInBand",
-    "test:watch": "jest --watch --passWithNoTests --runInBand",
-    "test:unit": "npm test --watch --passWithNoTests --runInBand -c jest-unit-config.js ",
-    "test:integration": "npm test --watch --runInBand -c jest-integration-config.js"
+    "test:unit": "npm test -- --watch --passWithNoTests -c jest-unit-config.ts ",
+    "test:integration": "npm test -- --watch -c jest-integration-config.ts"
   },
   "keywords": [],
   "author": "",
