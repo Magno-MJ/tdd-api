@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "sucrase-node src/main/server.ts",
+    "build": "tsc",
     "test": "jest --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch --passWithNoTests -c jest-unit-config.ts ",
     "test:integration": "npm test -- --watch -c jest-integration-config.ts"
